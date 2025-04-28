@@ -1,0 +1,7 @@
+google-generativeai
+python-dotenv
+colorama
+termcolor
+rich
+halo
+pyfiglet
