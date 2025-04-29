@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nyx-ai"
+version = "0.1.0"
+description = "Nyx AI: Your Gen Z AI assistant powered by Google's Gemini API."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Ishaan Chowdhury", email = "ishaanchowdhury2494.com" }
+]
+keywords = ["AI", "chatbot", "Gemini", "assistant", "Gen Z"]
+dependencies = [
+  "google-generativeai",
+  "python-dotenv",
+  "termcolor",
+  "rich",
+  "halo"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "flake8"]
+
+[project.scripts]
+nyx = "nyx_main:main"
