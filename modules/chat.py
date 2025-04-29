@@ -77,7 +77,7 @@ def chat_with_nyx(user_input, chat_history=None):
     return response_text, chat_history
 
 def welcome_nyx():
-    ascii_banner = pyfiglet.figlet_format("Welcome Back, Ishaan!")
-    print(colored(ascii_banner, 'yellow'))  
+    ascii_banner = pyfiglet.figlet_format("Welcome Back, Buddy!")
+    print(colored(ascii_banner, 'red'))  
 
 
